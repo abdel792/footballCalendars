@@ -42,7 +42,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: Item in the tools menu for displaying Football calendars.
 		_("&Football calendars..."),
 		# Translators: The tooltyp text for the football item.
-		_("Allows you to display the football season calendars of the French championship for leagues 1 and 2 as well as the rankings history"))
+		_("Allows you to display the football season calendars of the French championship "
+		"for leagues 1 and 2 as well as the rankings history"))
 
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onFootballDialog, self.footballItem)
 
@@ -74,7 +75,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	# Translators: Message presented in input help mode.
 	script_displayFootballCalendars.__doc__ = _(
-		"Allows you to display the season calendars, as well as the history of the rankings of the French football championship for leagues 1 and 2"
+		"Allows you to display the season calendars, "
+		"as well as the history of the rankings of the French football championship for leagues 1 and 2"
 	)
 
 	def onFootballCalendarsDialog(self, evt):

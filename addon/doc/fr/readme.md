@@ -42,7 +42,7 @@ Dans le panneau des paramètres de l'extension, vous devriez trouver ce qui suit
 
 ## Remarques ##
 
-* Par défaut, le geste «contrôle + Shift + F8» est affecté au script qui permet d'afficher les calendriers des aisons, ainsi que l'historique des classements;
+* Par défaut, le geste «contrôle + Shift + F8» est affecté au script qui permet d'afficher les calendriers des saisons, ainsi que l'historique des classements;
 * Un script sans geste attribué vous permet d'ouvrir le panneau des paramètres de l'extension;
 * Vous pouvez attribuer de nouveaux gestes pour exécuter ces scripts dans le menu «Gestes de commandes» et plus précisément, dans la catégorie «Calendriers de football»;
 * Si vous utilisez nvda-2021.1 ou version ultérieure, vous pourrez accéder au paragraphe décrivant le panneau des paramètres de l'extension en pressant simplement sur la touche «F1» dès que le focus sera positionné sur ce contrôle.

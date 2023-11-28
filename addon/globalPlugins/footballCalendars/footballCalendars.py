@@ -169,8 +169,7 @@ class SeasonsDialog(SettingsDialog):
 				if "  " in item:
 					lst.remove(f"<h1>{item}</h1>")
 					newLst = re.split(r"[\s]+", item)[: -1]
-					if "1." in newLst:
-						newLst.remove("1.")
+					newLst = [x for x in newLst if not re.match(r"\d\.", x)]
 					newLst.insert(0, "<ul>")
 					newLst[1] = f"<li>{addition[0]}{newLst[1]}</li>"
 					newLst[2] = f"<li>{addition[1]}{newLst[2]}</li>"
