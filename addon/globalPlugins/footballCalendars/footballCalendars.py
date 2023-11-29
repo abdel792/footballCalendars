@@ -184,7 +184,6 @@ class SeasonsDialog(SettingsDialog):
 			lst = [x for x in lst if x != ""]
 			message = "\n".join(lst)
 			message = message if isHtml else cleanMessageForText(message)
-			print(message)
 			title = display
 		if config.conf["football"]["displayFootballMode"] in ("simpleMessage", "HTMLMessage"):
 			ui.browseableMessage(title=title, message=message, isHtml=isHtml)

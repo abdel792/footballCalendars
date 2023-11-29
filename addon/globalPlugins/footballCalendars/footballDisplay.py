@@ -47,8 +47,9 @@ def readUrl(url: str, coding: str, q: Optional[queue.Queue] = None) -> Optional[
 	return None
 
 
-def fetchLequipe(ligue):
-	result = queue.Queue()
+def fetchLequipe(ligue: int) -> None:
+	result: queue.SimpleQueue = queue.SimpleQueue()
+	res: List[str] = []
 	if ligue == 1:
 		pgsLequipe1.clear()
 	else:
@@ -62,7 +63,8 @@ def fetchLequipe(ligue):
 		thread.start()
 	for thread in threads:
 		thread.join()
-	res = list(result.queue)
+	for i in range(result.qsize()):
+		res.append(result.get_nowait())
 	if ligue == 1:
 		pgsLequipe1.extend(res)
 	else:
