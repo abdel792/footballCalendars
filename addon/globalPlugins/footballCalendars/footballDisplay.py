@@ -13,7 +13,7 @@ from datetime import datetime
 import queue
 
 
-curYear: int = datetime.today().year
+curYear: int = datetime.today().year if datetime.today().month > 6 else datetime.today().year - 1
 prefix1: str = "https://www.maxifoot.fr/calendrier-ligue-1-france-"
 prefix2: str = "https://www.maxifoot.fr/calendrier-ligue-2-france-"
 prefLequipe1: str = "https://www.lequipe.fr/Football/ligue-1/"
